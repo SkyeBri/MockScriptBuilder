@@ -1,0 +1,107 @@
+/*
+ * Default Style Sheet on Windows Platforms
+ * Note: Always use CSS-classes with and without the "ads--" namespace to support Qt4 & Qt5
+ */
+
+ads--QWidget, QWidget
+{
+    background: MAIN_COLOR_0;
+    color: TEXT_COLOR_0;
+}
+
+ads--QWidget:disabled, QWidget:disabled
+{
+    color: DISABLED_COLOR;
+}
+
+ads--QWidget:enabled, QWidget:enabled
+{
+    color: TEXT_COLOR_0;
+}
+
+ads--QPushButton, QPushButton
+{
+    background: MAIN_COLOR_0;
+    color: TEXT_COLOR_0;
+}
+
+ads--ContainerWidget, ContainerWidget
+{
+    background: CWB_COLOR;
+}
+
+ads--ContainerWidget QSplitter::handle, ContainerWidget QSplitter::handle
+{
+    background: CWBH_COLOR;
+}
+
+ads--SectionWidget, SectionWidget
+{
+    background: SWB_COLOR;
+    border: 9px solid SWBC_COLOR;
+}
+
+ads--SectionWidget #tabsMenuButton::menu-indicator, SectionWidget #tabsMenuButton::menu-indicator
+{
+    image: none;
+}
+
+ads--SectionTitleWidget, SectionTitleWidget
+{
+    background: STWB_COLOR;
+    border-color: STWBC_COLOR;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    padding: 0 9px;
+}
+
+ads--SectionTitleWidget[activeTab="true"], SectionTitleWidget[activeTab="true"]
+{
+    color: #000000;
+    background: qlineargradiant(spread:pad, x1:0, y1:0, x2:0, y2:0.5, stop:0, STWBA_COLOR_0, stop:1, STWBA_COLOR_1);
+}
+
+ads--SectionContentWidget, SectionContentWidget
+{
+    background: SCWB_COLOR;
+    border-color: SCWBC_COLOR;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+}
+
+/* Special: QLabels inside SectionTitleWidget */
+ads--QLabel, QLabel
+{
+    color: TEXT_COLOR_0;
+    background: transparent;
+}
+
+/* Special: QLabels inside SectionTitleWidget which is floating */
+ads--FloatingWidget ads--SectionTitleWidget QLabel, FloatingWidget SectionTitleWidget
+{
+    color: MAIN_COLOR_1;
+}
+
+ads--QLineEdit, QLineEdit
+{
+    color: TEXT_COLOR_0;
+    background: MAIN_COLOR_1;
+    border: 1px solid rbg(200,200,200);
+    border-radius: 3px;
+    padding: 2 8px;
+}
+
+ads--QRadioButton, QRadioButton
+{
+    background: MAIN_COLOR_0;
+}
+
+ads--QSlider, QSlider
+{
+    background: MAIN_COLOR_1;
+}
+
+ads--QSplitter, QSplitter
+{
+    background: CWB_COLOR;
+}

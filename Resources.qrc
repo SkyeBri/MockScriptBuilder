@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>variable-windows.css</file>
+    </qresource>
+</RCC>
